@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class LazyCtorTest {
 
-    static final boolean use_cache = true;
+    static final boolean use_cache = false;
 
     // runs before each textMethod
     @Before
