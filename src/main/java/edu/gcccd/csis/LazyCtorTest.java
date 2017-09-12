@@ -2,6 +2,8 @@ package edu.gcccd.csis;
 
 import org.junit.*;
 
+import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.After;
+import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
 import static org.junit.Assert.*;
 
 public class LazyCtorTest {
@@ -35,7 +37,7 @@ public class LazyCtorTest {
             LazyCtor y = LazyCtor.getInstance();
             assertEquals(i, y.getId());
         }
-        assertNull(LazyCtor.getInstance());
+        Assert.assertNull(LazyCtor.getInstance());
     }
 
 }
